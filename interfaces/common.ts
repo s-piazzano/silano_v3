@@ -30,3 +30,16 @@ export interface Activity {
   link: LinkInt;
   image: Image;
 }
+
+export interface Seo {
+  title: string;
+  description: string;
+  image: {
+    data: {
+      attributes: {
+        url: string;
+        formats: Object;
+      };
+    };
+  };
+}

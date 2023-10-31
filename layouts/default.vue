@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col min-h-screen">
+  <div class="relative flex flex-col">
     <!-- Navbar -->
     <AppNavbar
       :imageUrl="menu.imageUrl"
@@ -12,12 +12,13 @@
 
   <!-- Footer -->
   <div class="mt-8">
-    <!-- <Footer :layout="footerLayout" /> -->
+    <AppFooter :layout="footerLayout" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { type Menu } from "../interfaces/common";
+import { type Layout } from "../interfaces/layout";
 
 interface Data {
   data: {
@@ -27,7 +28,7 @@ interface Data {
     footer: {
       data: {
         attributes: {
-          body: object;
+          body: Array<Layout>;
         };
       };
     };

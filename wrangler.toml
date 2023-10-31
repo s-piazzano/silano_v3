@@ -1,0 +1,10 @@
+name = "silano_v3"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-09-10"
+account_id = "932d53f706fbb438d8e6dab788301642"
+route = "silanosrl.it"
+
+[site]
+
+bucket = ".output/public"

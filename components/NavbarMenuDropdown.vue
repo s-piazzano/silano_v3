@@ -8,11 +8,13 @@ defineProps<{
   sections: Array<Section>;
 }>();
 
-const isHover = ref(false);
+/* const isHover = ref(false);
 
 const setIsHover = (value: boolean) => {
   isHover.value = value;
-};
+}; */
+
+const [isHover, setIsHover] = useS(false);
 </script>
 
 <template>

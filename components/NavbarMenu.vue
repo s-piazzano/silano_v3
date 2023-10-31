@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div
-    class="hidden w-full h-[74px] lg:flex text-stone-900 font-light uppercase text-sm tracking-widest"
+    class="hidden w-full h-[74px] md:flex text-stone-900 font-light uppercase text-sm tracking-widest"
   >
     <div v-for="x in layout">
       <!-- Dropdown Menu -->

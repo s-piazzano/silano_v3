@@ -39,18 +39,18 @@ defineProps<{
       class="relative w-full h-[74px] bg-base-200 border-b border-gray-200 px-4 md:px-16 flex justify-between items-center"
     >
       <!-- Logo -->
-      <NuxtLink to="/" class="w-[65px] flex flex-col items-center mr-6 -ml-1">
+      <NuxtLink to="/" class="w-[65px] flex flex-col items-start mr-6 -ml-1">
         <NuxtImg :src="`${imageUrl}`" width="45" height="45" alt="logo" />
         <p
           id="companyName"
-          class="uppercase text-xxs text-forest opacity-0 font-light"
+          class="uppercase text-xxs text-forest opacity-100 font-light"
         >
           silano srl
         </p>
       </NuxtLink>
       <NavbarMenu :layout="layout" />
-      <div class="block lg:hidden">
-        <!-- <HamburgerMenu layout="{layout}" imageUrl="{imageUrl}" /> -->
+      <div class="block md:hidden">
+        <NavbarMenuHamburger :layout="layout" :imageUrl="imageUrl" />
       </div>
     </div>
   </div>
